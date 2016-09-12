@@ -1,0 +1,126 @@
+<!DOCT html>
+<html>
+<head>
+	<title> HTML 5 </title>
+
+	<!--- CSS --->
+	<style type="text/css">
+	code {
+	color:olive;
+	font-family:monospace, courier;
+	font-size:15px;
+	}
+	h1, h2 {
+	font-family:Sans-Serif, verdana;
+	}
+	p, li {
+	font-family:Calibri;
+	font-size:15px;
+	}
+	li.warna {
+	color:transparent;
+	}
+	em {
+	color:maroon;
+	}
+	li b {
+	font-family:calibri;
+	font-size:16px;
+	}
+	a:hover {
+	color:red;
+	}
+	h2:hover {
+	color:aqua;
+	}
+	.warna {
+	color:olive;
+	}
+	.p::first-letter {
+	font-family:Agency;
+	font-size:40px;
+	float:center;
+	color:RGB(4, 43, 60);
+	}
+	.huruf {
+	font-family:monospace;
+	}
+	.paragraf{
+	line-height:18px;
+	}
+	span.miring {
+	font-style:oblique;
+	font-weight:bold;
+	}
+	[span] li {
+	color:maroon;
+	}
+
+	</style>
+</head>
+
+<!--- isi --->
+<body>
+	<div style="background-color:RGBA(22, 93, 115, 0.8);color:black;padding:1px;"><hr />
+		<h1 align="center"><b> Bahasa Program HTML 5 </b></h1><hr />
+	</div>
+
+		<!--- Pendahuluan --->
+		<h2><u> Pendahuluan </u></h2>
+			<p class="p"> HTML 5 adalah sebuah <span class="miring">pembaharuan</span> untuk bahasa <em> HTML </em> seri sebelumnya. Banyak penambahan-penambahan <em>code</em> yang baru dan tentunya sangat menambah aksebilitas untuk penggunanya. <br /> Dalam <em> HTML 5 </em> kita harus menggunakan <q><em><b>&lt;! DOCT html&gt;</b></em></q> untuk membuka bahasa ini dan ditempatkan paling awal baru setelahnya diisi oleh elemen-elemen lainnya.<br /> Dan juga ditambahnkan pula elemen <q><em><b>&lt; meta charset="UTF-8" &gt;</b></em></q> yang berfungsi sebaga penanda type text yg kita input ke HTML, elemen ini ditempatkan setelah bagian <q>head</q> <q><b><em>&lt; head &gt;</b></em></q> yang akan kita bahas nanti.</p>
+
+		<!--- Bagian-bagian pada HTML 5--->
+		<h2><u> Bagian-bagian pada HTML 5 </u></h2>
+			<p> pada <b> HTML 5 </b> terdapat 2 bagian yaitu:<p>
+				<ol type="A">
+					<li><b> Bagian Head</b><br /> Bagian ini berisikan <span><b> title </b></span> yaitu tempat nama website kita. Title ini dapatkita input dengan query <code>&lt;title&gt;</code> dan jangan lupa untuk menambahkan tag penutup dengan cara menambahkan garis miring <q> / </q> lalu diikuti query nya. saya akan membuat contoh seperti ini: <code><br /> &lt;head&gt; <br /> &lt;title&gt;</code><b> Nama website kita </b><code>&lt;/title&gt;<br />&lt;/head&gt;</code>
+					<li><b> Bagian Body</b><br /> Bagian ini berisikan <b> head </b> yaitu isi web kita, entah itu text, artikel, atau angka. Cara menggunakannya ialah dengan menambahkan query <q><code>&lt;Body&gt;</q></code> lalu kita isi text,angka,atau yang lainnya. <br /> Untuk mengakhirinya tambahkan saja garis miring <q> / </q> cara ini berlaku untuk mengakhiri semua query dalam HTML. Saya contohkan seperti ini: <br /><code> &lt;Body&gt; <br /> &lt;p&gt;</code><b> Isi website kita </b><code>&lt;/p&gt; <br /> &lt;/body&gt; </code></li>
+			</ol
+			<p> Secara keseluruhan dapat kita susun seperti ini: <br /><code> &lt;!DOCT html&gt; <br /> &lt;html&gt; <br /> &lt;head&gt; <br /> &lt;meta charset="UTF-8"&gt; &lt;title&gt; </code><b> nama website kita </b><code> &lt;/title&gt; <br /> &lt;/head&gt; <br />&lt;body&gt; <br /> &lt;p&gt; </code><b> isi website kita </b><code>&lt;/p&gt; <br /> &lt;/body&gt; <br /> &lt;/html&gt;</code>
+
+				<!--- Tutorial --->
+				<h2><u> Tutorial </u></h2>
+		<p> Nah kali ini kita masuk ke bagian <em><b> Tutorial </b></em>, hehehe langsung gigi 4 aja ya gann... </p>
+
+			<!--- Cara menambahkan Gambar di HTML 5 --->
+			<ol type="1">
+				<li><b> Cara Menambahkan Gambar di HTML 5 </b><br /> Di <em>HTML 5</em> kita dapat menambhakan gambbar yang kita mau ke dalam website dengan menggunakan query <br /><code>&lt;img src="gambar.jpg height="100px" width="100px" align="" border="1px" /&gt;</code></li><hr />
+				<li><b> Menambahkan File Audio </b><br /> Menambahkannya dengan cara memakai query <br /><code> &lt;audio controls autoplay&gt;  <br /> &lt;source src="musik.mp3" type="audio/mpeg"&gt; <br /> &lt;/audio&gt; </code><br /> dan hasilnya akan keluar seperti ini <br />
+					<audio controls autoplay>
+					<source src="musik.mp3" type="audio/mpeg">
+					</audio> </li><hr />
+
+				<!--- Menambhkan Video --->
+				<li><b> Menambhkan Video</b><br />Video dapat kita tambahkan/input dengan query <code>&lt;video controls autoplay&gt;<br />&lt;source src="video.mp4" type="video/mp4"&gt; <br /> &lt/video&gt; </code><br /> dan hasilnya akan seperti ini <br />
+					<video controls autoplay>
+					<source src="film.mp4" type="video/mp4">
+					</video><hr /></li>
+
+				<!--- Menambahkan Link --->
+				<li><b> Menambahkan Link</b><br /> Kita dapat menambahkan suatu link kedalam HTML dengan query <br /><code> &lt;a href="</code><b>www.link kita.com</b><code> target="</code><b>http//dsdsdad.com</b><code>&gt; </code>Link <code>&lt;/a&gt;</code><br /> saya akan membuat contohnya seperti ini <br />
+					<a href="file:///C:/Users/DELL/Desktop/%E2%80%8C/project%202.html"> saya </a></li><hr />
+
+				<!--- Membuat Tabel Sederhana --->
+				<li><b> Membuat Tabel Sederhana</b><br /> Membuat tabel di HTML dapat menggunakan query<br /><code>&lt;table border="2px"&gt;<br />&lt;tr&gt;<br />&lt;td&gt;</code><b>Kolom 1</b><code>&lt;/td&gt;<br />&lt;td&gt;</code><b>Kolom 2</b><code>&lt;/td&gt;<br />&lt;/tr&gt;<br />&lt;/table&gt;</code><br /> Kira-kira hasilnya akan seperti ini <br />
+					<table border="2px">
+						<tr>
+							<td bgcolor="lightblue"> Kolom 1 </td>
+							<td bgcolor="pink"> Kolom 2 </td>
+						</tr>
+					</table></li><hr />
+
+				<!--- Membuat List --->
+				<li><b> Membuat List </b><br /> Kita dapat membuat list sederhana dengan menggunakan elemen <code> &lt;ol&gt; </code> untul list yang berurut dan elemen <code> &lt;ul&gt; </code> untuk list yang tidak berurut.<br />Disini saya akan membuat contoh list yang berurut: <br /><code> &lt;ol&gt;</code>komposisi<code>&lt;/ol&gt;<br />&lt;li&gt;</code>Minyak Nabati<code>&lt;/li&gt;<br />&lt;li&gt;</code>Penguat Rasa<code>&lt;/li&gt;<br />&lt;li&gt;</code>Gula<code>&lt;/li&gt;<br />&lt;/ol&gt;</code><br /> Sekarang kita akan membuat list yg tak berurut: <br /><code>&lt;ul&gt;</code>Komposisi<code>&lt;/ul&gt;<br />&lt;li&gt;</code>Minyak Nabati<code>&lt;/li&gt;<br />&lt;li&gt;</code>Penguat Rasa<code>&lt;/li&gt;<br />&lt;li&gt;</code>Gula<code>&lt;/li&gt;<br />&lt;/ul&gt;</code>
+				<p> Bila kita masukan query ke dalam HTML maka akan menghasilkan seperti ini<br /> List berurut
+					<ol>
+						<li> Minyak Nabati </li>
+						<li> Penguat Rasa </li>
+						<li> Gula </li>
+					</ol><br />
+				list tidak terurut:<br />
+					<ul>
+						<li> Minyak Nabati </li>
+						<li> Penguat Rasa </li>
+						<li> Gula </li>
+					</ul><br />
+				gimana Mudah kan?<hr /><p>
