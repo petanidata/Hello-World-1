@@ -1,0 +1,27 @@
+saldo = 0
+user = int(input("Masukan saldo anda: "))
+saldo += user
+while saldo > 0:
+	saldo = saldo
+	print("Sisa saldo adalah: ", saldo)
+	print("\n1. Permainan 1")
+	print("2. Permainan 2")
+	print("3. Permainan 3")
+	print("4. Isi ulang saldo")
+	print("5. Quit")
+	main = input("\nPilih salah satu (dengan angka): ")
+	if main == "1":
+		saldo -= 1000
+	elif main == "2":
+		saldo -= 1500
+	elif main == "3":
+		saldo -= 2000
+	elif main == "4":
+		saldo += 4000
+		print("Saldo anda adalah: ", saldo)
+	elif main == "5":
+		print("Sisa saldo anda adalah: ", saldo)
+		break
+if saldo <= 0:
+	print("Saldo anda habis")
+	input("ketik apa saja untuk melanjutkan.....")
