@@ -1,3 +1,4 @@
+print("create by: Naufal")
 saldo = 0
 user = int(input("Masukan saldo anda: "))
 saldo += user
